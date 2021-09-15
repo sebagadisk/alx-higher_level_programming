@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-def complex_delete(prmDictionary, prmValue):
-    for key, value in sorted(prmDictionary.items()):
-        if value == prmValue:
-            del prmDictionary[key]
-    return prmDictionary
+def square_matrix_map(matrix=[]):
+    return list(map(lambda y: list(map(lambda x: x ** 2, y)), matrix))
