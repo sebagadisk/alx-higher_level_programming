@@ -6,3 +6,4 @@ if (isNaN(arg)) {
 } else {
   console.log('My number: ' + arg);
 }
+
