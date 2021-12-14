@@ -1,9 +1,11 @@
 #!/usr/bin/node
-'use strict';
-let arg = process.argv[2];
-if (isNaN(arg)) {
-  console.log('Not a number');
-} else {
-  console.log('My number: ' + arg);
+const array = process.argv.slice(2);
+if (array[0] === undefined && array[1] === undefined) {
+  console.log('undefined is undefined');
+} else if (array[0] !== undefined && array[1] !== undefined) {
+  console.log(array[0] + ' is ' + array[1]);
+} else if (array[0] !== undefined && array[1] === undefined) {
+  console.log(array[0] + ' is undefined');
+} else if (array[0] === undefined && array[1] !== undefined) {
+  console.log('undefined is ' + array[1]);
 }
-
